@@ -8,6 +8,6 @@ namespace BudgetManagement.Models
     public class Category
     {
         public int CategoryID { get; set; }
-        public char Name { get; set; }
+        public string Name { get; set; }
     }
 }
