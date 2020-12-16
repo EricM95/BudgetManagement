@@ -8,7 +8,7 @@ namespace BudgetManagement.Models
     public class UserCategoryBudget
     {
         public int UserCategoryBudgetID { get; set; }
-        public ICollection<Users> Users { get; set; }
+        public ICollection<User> User { get; set; }
         public ICollection<Category> Category { get; set; }
         public string Notes { get; set; }
         public string Colour { get; set; }

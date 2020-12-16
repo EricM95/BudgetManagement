@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Security;
+
+
 
 namespace BudgetManagement.Models
 {
-    public class Users
+    public class User
     {
+
         public int UsersID { get; set; }
+
         public ICollection<Account> Accounts { get; set; }
+        
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Username { get; set; }
