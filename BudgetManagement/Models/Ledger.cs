@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,7 +8,9 @@ namespace BudgetManagement.Models
 {
     public class Ledger
     {
-        public int Key { get; set; }
+        [Key]
+        public int ItemID { get; set; }
+        [Required]
         public string TransType { get; set; }
 
         [Required]
