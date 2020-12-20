@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace BudgetManagement.Models
 {
@@ -11,7 +11,7 @@ namespace BudgetManagement.Models
     {
         [Key]
         [Required]
-        public int UsersID { get; set; }
+        public int UserID { get; set; }
         public ICollection<Account> Accounts { get; set; }
 
         [Required]

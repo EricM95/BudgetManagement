@@ -10,6 +10,8 @@ namespace BudgetManagement.Models
     {
         [Key]
         public int CategoryID { get; set; }
+
+        [Required]
         public string Name { get; set; }
     }
 }
