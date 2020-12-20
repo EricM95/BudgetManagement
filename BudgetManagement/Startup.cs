@@ -1,4 +1,4 @@
-using BudgetManagement.Data;
+﻿using BudgetManagement.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BudgetManagement.Models;
 
 namespace BudgetManagement
 {
@@ -33,6 +34,9 @@ namespace BudgetManagement
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
+
+            services.AddDbContext<BudgetManagementContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("BudgetManagementContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
