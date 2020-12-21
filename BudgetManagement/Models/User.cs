@@ -2,12 +2,13 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 using System.Linq;
 
 
 namespace BudgetManagement.Models
 {
-    public class User
+    public class User : IdentityUser
     {
         [Key]
         [Required]

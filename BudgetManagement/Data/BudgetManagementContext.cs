@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using BudgetManagement.Models;
 
 namespace BudgetManagement.Data
 {
-    public class BudgetManagementContext : DbContext
+    public class BudgetManagementContext : ApplicationDbContext
     {
-        public BudgetManagementContext (DbContextOptions<BudgetManagementContext> options)
+        public BudgetManagementContext (DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
