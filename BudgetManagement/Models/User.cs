@@ -3,11 +3,12 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Identity;
 
 
-namespace BudgetManagement.Models
+namespace ApplicatonDbContext.Models
 {
-    public class User
+    public class User : IdentityUser
     {
         [Key]
         [Required]
@@ -25,5 +26,8 @@ namespace BudgetManagement.Models
         [DataType(DataType.EmailAddress)]
         [EmailAddress]
         public string EmailAddress { get; set; }
+        
+        [Required]
+        public string Password { get; set; }
     }
 }

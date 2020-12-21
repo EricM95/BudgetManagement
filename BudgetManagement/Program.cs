@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Hosting;
-using BudgetManagement.Data;
+using ApplicatonDbContext.Data;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 
 
-namespace BudgetManagement
+namespace ApplicatonDbContext
 {
     public class Program
     {

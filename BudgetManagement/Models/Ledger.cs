@@ -4,7 +4,7 @@ using System.Linq;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BudgetManagement.Models
+namespace ApplicatonDbContext.Models
 {
     public class Ledger
     {

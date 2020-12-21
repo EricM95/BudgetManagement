@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using BudgetManagement.Data;
-using BudgetManagement.Models;
+using ApplicatonDbContext.Data;
+using ApplicatonDbContext.Models;
 
-namespace BudgetManagement.Pages.Accounts
+namespace ApplicatonDbContext.Pages.Accounts
 {
     public class EditModel : PageModel
     {
-        private readonly BudgetManagement.Data.BudgetManagementContext _context;
+        private readonly ApplicatonDbContext.Data.ApplicationDbContext _context;
 
-        public EditModel(BudgetManagement.Data.BudgetManagementContext context)
+        public EditModel(ApplicatonDbContext.Data.ApplicationDbContext context)
         {
             _context = context;
         }

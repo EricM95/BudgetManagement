@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using BudgetManagement.Data;
-using BudgetManagement.Models;
+using ApplicatonDbContext.Data;
+using ApplicatonDbContext.Models;
 
-namespace BudgetManagement.Pages.Accounts
+namespace ApplicatonDbContext.Pages.Accounts
 {
     public class CreateModel : PageModel
     {
-        private readonly BudgetManagement.Data.BudgetManagementContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public CreateModel(BudgetManagement.Data.BudgetManagementContext context)
+        public CreateModel(ApplicatonDbContext.Data.ApplicationDbContext context)
         {
             _context = context;
         }

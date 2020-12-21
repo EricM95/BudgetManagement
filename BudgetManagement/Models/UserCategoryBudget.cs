@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BudgetManagement.Models
+namespace ApplicatonDbContext.Models
 {
     public class UserCategoryBudget
     {

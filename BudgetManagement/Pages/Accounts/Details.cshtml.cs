@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using BudgetManagement.Data;
-using BudgetManagement.Models;
+using ApplicatonDbContext.Data;
+using ApplicatonDbContext.Models;
 
-namespace BudgetManagement.Pages.Accounts
+namespace ApplicatonDbContext.Pages.Accounts
 {
     public class DetailsModel : PageModel
     {
-        private readonly BudgetManagement.Data.BudgetManagementContext _context;
+        private readonly ApplicatonDbContext.Data.ApplicationDbContext _context;
 
-        public DetailsModel(BudgetManagement.Data.BudgetManagementContext context)
+        public DetailsModel(ApplicatonDbContext.Data.ApplicationDbContext context)
         {
             _context = context;
         }

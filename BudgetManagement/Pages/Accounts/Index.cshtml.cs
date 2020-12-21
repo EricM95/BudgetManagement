@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using BudgetManagement.Data;
-using BudgetManagement.Models;
+using ApplicatonDbContext.Data;
+using ApplicatonDbContext.Models;
 
-namespace BudgetManagement.Pages.Accounts
+namespace ApplicatonDbContext.Pages.Accounts
 {
     public class IndexModel : PageModel
     {
-        private readonly BudgetManagementContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public IndexModel(BudgetManagementContext context)
+        public IndexModel(ApplicationDbContext context)
         {
             _context = context;
         }
