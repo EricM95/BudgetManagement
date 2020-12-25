@@ -9,7 +9,7 @@ using System;
 
 namespace BudgetManagement.Data.Migrations
 {
-    [DbContext(typeof(BudgetManagementContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {

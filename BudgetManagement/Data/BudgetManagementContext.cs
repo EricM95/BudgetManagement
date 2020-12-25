@@ -8,9 +8,9 @@ using BudgetManagement.Models;
 
 namespace BudgetManagement.Data
 {
-    public class BudgetManagementContext
+    public class BudgetManagementContext : ApplicationDbContext
     {
-        public BudgetManagementContext (DbContextOptions<BudgetManagementContext> options)
+        public BudgetManagementContext (DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
@@ -28,6 +28,6 @@ namespace BudgetManagement.Data
             modelBuilder.Entity<Category>().ToTable("Category");
             modelBuilder.Entity<User>().ToTable("User");
             modelBuilder.Entity<UserCategoryBudget>().ToTable("UserCategoryBudget");
-        } 
+        }
     }
 }

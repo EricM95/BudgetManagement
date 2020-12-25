@@ -27,18 +27,14 @@ namespace BudgetManagement
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<Data.BudgetManagementContext>(options =>
+            services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<Data.BudgetManagementContext>();
-
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<Data.BudgetManagementContext>();
+                .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
 
-            services.AddDbContext<Data.BudgetManagementContext>(options =>
+            services.AddDbContext<BudgetManagementContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("BudgetManagementContext")));
             
         }
