@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BudgetManagement.Migrations
 {
-    [DbContext(typeof(BudgetManagementContext))]
+    [DbContext(typeof(Data.BudgetManagementContext))]
     partial class BudgetManagementContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

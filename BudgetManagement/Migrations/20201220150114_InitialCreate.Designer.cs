@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BudgetManagement.Migrations
 {
-    [DbContext(typeof(BudgetManagementContext))]
+    [DbContext(typeof(Data.BudgetManagementContext))]
     [Migration("20201220150114_InitialCreate")]
     partial class InitialCreate
     {

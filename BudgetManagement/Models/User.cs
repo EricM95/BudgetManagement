@@ -26,5 +26,9 @@ namespace BudgetManagement.Models
         [DataType(DataType.EmailAddress)]
         [EmailAddress]
         public string EmailAddress { get; set; }
+
+        [Required]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
     }
 }

@@ -12,9 +12,9 @@ namespace BudgetManagement.Pages.Accounts
 {
     public class IndexModel : PageModel
     {
-        private readonly BudgetManagementContext _context;
+        private readonly Data.BudgetManagementContext _context;
 
-        public IndexModel(BudgetManagementContext context)
+        public IndexModel(Data.BudgetManagementContext context)
         {
             _context = context;
         }
